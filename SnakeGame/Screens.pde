@@ -18,6 +18,9 @@ void Menu(){
 
 void Game(){
   background(45, 53, 65);
+  
+  snake.show();
+  snake.move();
 }
 
 void Ranking(){

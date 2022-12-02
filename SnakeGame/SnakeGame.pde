@@ -1,4 +1,6 @@
 int pantalla = 0;
+int totalTails = 0;
+Snake snake;
 
 void setup(){
   frameRate(10);
@@ -7,6 +9,9 @@ void setup(){
   fullScreen();
   surface.setLocation(650, 100);
   surface.setSize(650, 850);
+  
+  //Init Class
+  snake = new Snake();
 }
 
 void draw(){
