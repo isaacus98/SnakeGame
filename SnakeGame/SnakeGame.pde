@@ -22,3 +22,25 @@ void draw(){
       break;
   }
 }
+
+void mouseClicked(){
+  if(pantalla == 0){
+    if (mouseX >= 50 && mouseY >= 650 && mouseX <= 600 && mouseY <= 750 ){
+      exit();
+    }
+    
+    if (mouseX >= 50 && mouseY >= 400 && mouseX <= 600 && mouseY <= 500 ){
+      pantalla = 1;
+    }
+    
+    if (mouseX >= 50 && mouseY >= 525 && mouseX <= 600 && mouseY <= 625 ){
+      pantalla = 2;
+    }
+  }
+  
+  if(pantalla == 2){
+    if (mouseX >= 25 && mouseY >= 10 && mouseX <= 175 && mouseY <= 60 ){
+      pantalla = 0;
+    }
+  }
+}
