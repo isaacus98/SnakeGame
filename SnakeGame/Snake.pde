@@ -39,6 +39,7 @@ class Snake{
     y += ySpeed;
     fill(106, 179,64);
     stroke(255, 255, 255);
+    strokeWeight(2);
     rect(x, y, 20, 20);
   }
   
