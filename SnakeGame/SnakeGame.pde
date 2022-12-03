@@ -1,9 +1,11 @@
 int pantalla = 0;
 int totalTails = 0;
+ArrayList<Tail> tails;
 Snake snake;
+Apple apple;
 
 void setup(){
-  frameRate(10);
+  frameRate(8);
   
   //Size screen
   fullScreen();
@@ -12,6 +14,8 @@ void setup(){
   
   //Init Class
   snake = new Snake();
+  apple = new Apple();
+  tails = new ArrayList<Tail>();
 }
 
 void draw(){

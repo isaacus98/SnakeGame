@@ -7,8 +7,8 @@ class Apple{
   }
   
   void generateCoordinates(){
-    x = random(width) - 20;
-    y = random(height) - 20;
+    x = random(width - 20);
+    y = random(height - 20);
     
     //Calcualate Coordinates
     float rx = x % 10.0;
@@ -19,7 +19,10 @@ class Apple{
   }
   
   void show(){
-    image(apple, x, y, 20, 20);
+    println("poma X: " + x + " y:" + y);
+    fill(150,130,0);
+    rect(x,y,20,20);
+    //image(apple, x, y, 20, 20);
   }
   
 }

@@ -19,8 +19,11 @@ void Menu(){
 void Game(){
   background(45, 53, 65);
   
+  generateApple();
   snake.show();
   snake.move();
+  snakeEatApple();
+  followTail();
 }
 
 void Ranking(){

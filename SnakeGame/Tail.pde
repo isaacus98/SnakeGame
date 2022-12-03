@@ -8,8 +8,8 @@ class Tail{
   }
   
   void show(float x, float y){
-    previousX = x + 10;
-    previousY = y + 10;
+    previousX = x;
+    previousY = y;
     this.x = x;
     this.y = y;
     fill(106, 179,64);

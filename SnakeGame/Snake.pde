@@ -6,35 +6,35 @@ class Snake{
   public Snake(){
     x = 100;
     y = 100;
-    xSpeed = 10;
+    xSpeed = 20;
   }
   
   void move(){
     if(keyCode == UP) {
       println("Amunt");
-      ySpeed = -10;
+      ySpeed = -20;
       xSpeed = 0;
     }
     else if(keyCode == DOWN) {
       println("Avall");
-      ySpeed = 10;
+      ySpeed = 20;
       xSpeed = 0;
     }
     else if(keyCode ==LEFT) {
       println("esquerra");
-      xSpeed = -10;
+      xSpeed = -20;
       ySpeed = 0;
     }
     else if(keyCode == RIGHT) {
       println("dreta");
-      xSpeed = 10;
+      xSpeed = 20;
       ySpeed = 0;
     }
   }
   
   void show(){
-    previousX = x + 10;
-    previousY = y + 10;
+    previousX = x;
+    previousY = y;
     x += xSpeed;
     y += ySpeed;
     fill(106, 179,64);
