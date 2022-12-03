@@ -7,12 +7,12 @@ class Apple{
   }
   
   void generateCoordinates(){
-    x = random(width - 20);
-    y = random(height - 20);
+    x = random(width);
+    y = random(height);
     
     //Calcualate Coordinates
-    float rx = x % 10.0;
-    float ry = y % 10.0;
+    float rx = x % 20.0;
+    float ry = y % 20.0;
     
     x -= rx;
     y -= ry;
