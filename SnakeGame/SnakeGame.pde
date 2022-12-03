@@ -1,3 +1,4 @@
+PImage logo;
 int pantalla = 0;
 int totalTails = 0;
 ArrayList<Tail> tails;
@@ -11,6 +12,9 @@ void setup(){
   fullScreen();
   surface.setLocation(650, 100);
   surface.setSize(650, 850);
+  
+  //Logo
+  logo = loadImage("logo.png");
   
   //Init Class
   snake = new Snake();

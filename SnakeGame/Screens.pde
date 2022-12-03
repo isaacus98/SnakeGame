@@ -1,10 +1,8 @@
 void Menu(){
   background(45, 53, 65);
   
-  //Title
-  fill(106, 179,64);
-  textSize(100);
-  text("Snake Game", 65, 200);
+  //Logo
+  image(logo, 50, 100, 550, 150);
   
   //Botons menu
   button(50, 400, 550, 100, 30);
@@ -26,6 +24,7 @@ void Game(){
   followTail();
   
   //Score
+  textButton(width / 2 - 50, 30, 24, "SCORE: " + totalTails);
   
   crashSnake();
 }
