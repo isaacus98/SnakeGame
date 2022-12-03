@@ -1,6 +1,8 @@
-PImage logo;
 int pantalla = 0;
 int totalTails = 0;
+PImage logo;
+PImage back;
+String[] scores;
 ArrayList<Tail> tails;
 Snake snake;
 Apple apple;
@@ -13,13 +15,17 @@ void setup(){
   surface.setLocation(650, 100);
   surface.setSize(650, 850);
   
-  //Logo
+  //load images
   logo = loadImage("logo.png");
+  back = loadImage("back.png");
   
   //Init Class
   snake = new Snake();
   apple = new Apple();
   tails = new ArrayList<Tail>();
+  
+  //Load file score
+  scores = loadStrings("data/score.txt");
 }
 
 void draw(){
@@ -52,7 +58,7 @@ void mouseClicked(){
   }
   
   if(pantalla == 2){
-    if (mouseX >= 25 && mouseY >= 10 && mouseX <= 175 && mouseY <= 60 ){
+    if (mouseX >= 10 && mouseY >= 10 && mouseX <= 60 && mouseY <= 60 ){
       pantalla = 0;
     }
   }

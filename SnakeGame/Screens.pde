@@ -10,7 +10,7 @@ void Menu(){
   button(50, 525, 550, 100, 30);
   textButton(200, 600, 75, "Ranking");
   button(50, 650, 550, 100, 30);
-  textButton(240, 725, 75, "Sortir");
+  textButton(240, 725, 75, "Exit");
   
 }
 
@@ -31,4 +31,7 @@ void Game(){
 
 void Ranking(){
   background(45, 53, 65);
+  
+  //Button Back
+  image(back, 10, 10, 50, 50);
 }
