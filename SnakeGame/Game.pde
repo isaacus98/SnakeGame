@@ -11,8 +11,8 @@ void snakeEatApple(){
       tails.add(new Tail(snake.previousX, snake.previousY));
       totalTails++;
       apple.generateCoordinates();
-    } else if(totalTails != 0){
-      tails.add(new Tail(tails.get(totalTails-1).previousX, tails.get(totalTails-1).previousY)); //<>//
+    } else if(totalTails != 0){ //<>// //<>// //<>// //<>//
+      tails.add(new Tail(tails.get(totalTails-1).previousX, tails.get(totalTails-1).previousY));
       totalTails++;
       apple.generateCoordinates();
     }

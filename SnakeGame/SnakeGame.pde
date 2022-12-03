@@ -5,7 +5,7 @@ Snake snake;
 Apple apple;
 
 void setup(){
-  frameRate(2);
+  frameRate(7);
   
   //Size screen
   fullScreen();
