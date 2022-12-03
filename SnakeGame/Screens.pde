@@ -24,6 +24,10 @@ void Game(){
   snake.move();
   snakeEatApple();
   followTail();
+  
+  //Score
+  
+  crashSnake();
 }
 
 void Ranking(){

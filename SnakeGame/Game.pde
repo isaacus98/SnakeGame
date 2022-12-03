@@ -28,3 +28,23 @@ void followTail(){
     }
   }
 }
+
+void crashSnake(){
+  if(snake.x < 0 || snake.x >= width ) {
+    pantalla = 2;
+    restart();
+    //WriteScore();
+    
+  }
+  else if(snake.y < 0 || snake.y >= height-20) {
+    pantalla = 2;
+    restart();
+    //WriteScore();
+  }
+}
+
+void restart(){
+  totalTails = 0;
+  tails.clear();
+  snake.restartSnake();
+}
