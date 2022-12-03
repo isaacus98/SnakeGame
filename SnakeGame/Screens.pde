@@ -6,11 +6,11 @@ void Menu(){
   
   //Botons menu
   button(50, 400, 550, 100, 30);
-  textButton(250, 475, 75, "Play");
+  textButton(260, 475, 75, "Play");
   button(50, 525, 550, 100, 30);
   textButton(200, 600, 75, "Ranking");
   button(50, 650, 550, 100, 30);
-  textButton(240, 725, 75, "Exit");
+  textButton(260, 725, 75, "Exit");
   
 }
 

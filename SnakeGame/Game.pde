@@ -41,6 +41,14 @@ void crashSnake(){
     restart();
     //WriteScore();
   }
+  
+  for(int i = 0; i< tails.size(); i++) {
+    if(snake.x == tails.get(i).x && snake.y == tails.get(i).y){
+      pantalla = 2;
+      restart();
+      //WriteScore();
+    }
+  }
 }
 
 void restart(){
