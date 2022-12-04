@@ -1,5 +1,6 @@
 int pantalla = 0;
 int totalTails = 0;
+Boolean isGame;
 PImage logo;
 PImage back;
 PImage[] controls;
@@ -59,10 +60,12 @@ void mouseClicked(){
     
     if (mouseX >= 50 && mouseY >= 400 && mouseX <= 600 && mouseY <= 500 ){
       pantalla = 1;
+      isGame = true;
     }
     
     if (mouseX >= 50 && mouseY >= 525 && mouseX <= 600 && mouseY <= 625 ){
       pantalla = 2;
+      isGame = false;
     }
   }
   
