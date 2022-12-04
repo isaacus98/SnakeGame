@@ -30,13 +30,13 @@ void followTail(){
 }
 
 void crashSnake(){
-  if(snake.x < 0 || snake.x >= width ) {
+  if(snake.x <= 0 || snake.x + 20 > width ) {
     pantalla = 2;
     restart();
     //WriteScore();
     
   }
-  else if(snake.y < 0 || snake.y >= height-20) {
+  else if(snake.y < 40 || snake.y + 20 > 740) {
     pantalla = 2;
     restart();
     //WriteScore();

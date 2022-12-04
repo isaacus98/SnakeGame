@@ -33,6 +33,13 @@ void Game(){
   image(controls[2], 370, 787, 50, 50);
   image(controls[3], 440, 787, 50, 50);
   
+  //Board
+  fill(45, 53, 65);
+  stroke(245, 245, 245);
+  strokeWeight(4);
+  rect(0, 40, 649, 700);
+  
+  //Events snake
   generateApple();
   snake.show();
   snake.move();
