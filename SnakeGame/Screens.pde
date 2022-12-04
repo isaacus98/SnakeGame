@@ -6,11 +6,11 @@ void Menu(){
   
   //Botons menu
   button(50, 400, 550, 100, 30);
-  textButton(260, 475, 75, "Play");
+  textButton(240, 475, 75, "PLAY");
   button(50, 525, 550, 100, 30);
-  textButton(200, 600, 75, "Ranking");
+  textButton(195, 600, 75, "SCORES");
   button(50, 650, 550, 100, 30);
-  textButton(260, 725, 75, "Exit");
+  textButton(250, 725, 75, "EXIT");
   
 }
 
@@ -53,4 +53,27 @@ void Ranking(){
   
   //Button Back
   image(back, 10, 10, 50, 50);
+  
+  //Title
+  textButton(140, 150, 100, "SCORES");
+  
+  //User score
+  textButton(100, 250, 80, "Your score: " + totalTails);
+  
+  //Separator
+  stroke(245, 245, 245);
+  strokeWeight(5);
+  strokeCap(ROUND);
+  line(50, 285, 600, 285);
+  
+  //Title score
+  textButton(150, 360, 70, "Best scores");
+  
+  //Scores
+  textButton(150, 450, 60, "1 - Player 1: " + scores[0]);
+  textButton(150, 525, 60, "2 - Player 2: " + scores[1]);
+  textButton(150, 600, 60, "3 - Player 3: " + scores[2]);
+  textButton(150, 675, 60, "4 - Player 4: " + scores[3]);
+  textButton(150, 750, 60, "5 - Player 5: " + scores[1]);
+  
 }
