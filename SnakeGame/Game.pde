@@ -1,7 +1,7 @@
 //Game logic
 
 void generateApple(){
-  background(45, 53, 65);
+  //background(45, 53, 65);
   apple.show();
 }
 

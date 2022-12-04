@@ -17,15 +17,27 @@ void Menu(){
 void Game(){
   background(45, 53, 65);
   
+  //Score
+  textButton(width / 2 - 50, 30, 24, "SCORE: " + totalTails);
+  
+  //Controls
+  textButton(100, 820, 24, "CONTROLS:");
+  textButton(231, 780, 24, "LEFT");
+  textButton(311, 780, 24, "UP");
+  textButton(360, 780, 24, "DOWN");
+  textButton(433, 780, 24, "RIGHT");
+  
+  //Images controls
+  image(controls[0], 230, 787, 50, 50);
+  image(controls[1], 300, 787, 50, 50);
+  image(controls[2], 370, 787, 50, 50);
+  image(controls[3], 440, 787, 50, 50);
+  
   generateApple();
   snake.show();
   snake.move();
   snakeEatApple();
   followTail();
-  
-  //Score
-  textButton(width / 2 - 50, 30, 24, "SCORE: " + totalTails);
-  
   crashSnake();
 }
 

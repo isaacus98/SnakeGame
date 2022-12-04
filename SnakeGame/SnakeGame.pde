@@ -2,13 +2,14 @@ int pantalla = 0;
 int totalTails = 0;
 PImage logo;
 PImage back;
+PImage[] controls;
 String[] scores;
 ArrayList<Tail> tails;
 Snake snake;
 Apple apple;
 
 void setup(){
-  frameRate(7);
+  frameRate(2); //Framerate = 7
   
   //Size screen
   fullScreen();
@@ -19,13 +20,19 @@ void setup(){
   logo = loadImage("logo.png");
   back = loadImage("back.png");
   
+  controls = new PImage[4];
+  controls[0] = loadImage("keyLeft.png");
+  controls[1] = loadImage("keyUp.png");
+  controls[2] = loadImage("keyDown.png");
+  controls[3] = loadImage("keyRight.png");
+  
   //Init Class
   snake = new Snake();
   apple = new Apple();
   tails = new ArrayList<Tail>();
   
   //Load file score
-  scores = loadStrings("data/score.txt");
+  scores = loadStrings("score.txt");
 }
 
 void draw(){
