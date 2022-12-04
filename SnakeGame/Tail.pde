@@ -7,7 +7,7 @@ class Tail{
     this.y = y;
   }
   
-  void show(float x, float y){   //<>//
+  void show(float x, float y){  
     previousX = this.x;
     previousY = this.y;
     this.x = x;

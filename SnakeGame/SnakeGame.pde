@@ -33,6 +33,8 @@ void setup(){
   
   //Load file score
   scores = loadStrings("score.txt");
+  
+  
 }
 
 void draw(){
@@ -67,6 +69,7 @@ void mouseClicked(){
   if(pantalla == 2){
     if (mouseX >= 10 && mouseY >= 10 && mouseX <= 60 && mouseY <= 60 ){
       pantalla = 0;
+      restart();
     }
   }
 }
