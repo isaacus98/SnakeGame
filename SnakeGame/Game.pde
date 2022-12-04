@@ -55,13 +55,20 @@ void restart(){
 
 void writeScore(){
   Boolean scoreIsUpdate = false;
+  String lastScore = "";
+  String lastScore2 = "";
   
   for(int i = 0; i < scores.length; i++){
     if(!scoreIsUpdate){
       if(totalTails > Integer.parseInt(scores[i])){
+        lastScore = scores[i];
         scores[i] = Integer.toString(totalTails);
         scoreIsUpdate = true;
       }
+    } else{
+      lastScore2 = scores[i];
+      scores[i] = lastScore;
+      lastScore = lastScore2;
     }
   }
   
