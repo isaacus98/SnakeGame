@@ -4,11 +4,12 @@ class Apple{
   
   public Apple(){
     apple = loadImage("apple.png");
+    generateCoordinates();
   }
   
   void generateCoordinates(){
-    x = random(width);
-    y = random(height);
+    x = random(20, width - 10);
+    y = random(40, 740);
     
     //Calcualate Coordinates
     float rx = x % 20.0;
