@@ -5,11 +5,28 @@ void Menu(){
   image(logo, 50, 100, 550, 150);
   
   //Botons menu
-  button(50, 400, 550, 100, 30);
+  if(!btPlayHover){
+    button(50, 400, 550, 100, 30);
+  } else{
+    buttonHover(50, 400, 550, 100, 30);
+  }
+  
   textButton(240, 475, 75, "PLAY");
-  button(50, 525, 550, 100, 30);
+  
+  if(!btScoresHover){
+    button(50, 525, 550, 100, 30);
+  } else {
+    buttonHover(50, 525, 550, 100, 30);
+  }
+  
   textButton(195, 600, 75, "SCORES");
-  button(50, 650, 550, 100, 30);
+  
+  if(!btExitHover){
+    button(50, 650, 550, 100, 30);
+  } else{
+    buttonHover(50, 650, 550, 100, 30);
+  }
+  
   textButton(250, 725, 75, "EXIT");
   
 }
@@ -52,7 +69,14 @@ void Ranking(){
   background(45, 53, 65);
   
   //Button Back
-  image(back, 10, 10, 50, 50);
+  if(!btBackHover){
+    button(10, 12, 65, 45, 15);
+    image(back, 17, 10, 50, 50);
+  } else{
+    buttonHover(10, 12, 65, 45, 15);
+    image(back, 17, 10, 50, 50);
+  }
+  
   
   if(isGame){
     //Title
