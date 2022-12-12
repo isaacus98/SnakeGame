@@ -48,6 +48,7 @@ class Snake{
     y = 100;
     ySpeed = 0;
     xSpeed = 20;
+    keyCode = RIGHT;
   }
   
 }
